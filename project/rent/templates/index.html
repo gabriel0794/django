@@ -1,0 +1,13 @@
+{% extends 'base_template.html' %}
+
+{% block title %}
+My Application
+{%endblock%}
+
+{%block content%}
+<h1>Django Application</h1>
+{% for rent in rent_list %}
+<div> {{rent.renter}} </div>
+<div> {{rent.car}} </div>
+{%endfor%}
+{%endblock%}
